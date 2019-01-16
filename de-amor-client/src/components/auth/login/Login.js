@@ -1,60 +1,85 @@
-import React, { Component } from 'react';
-import AuthService from '../auth-service';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import AuthService from "../auth-service";
+import { Link } from "react-router-dom";
 import "./login.css";
 
 class Login extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {username: '', password: '' };
+    this.state = { username: "", password: "" };
     this.service = new AuthService();
   }
 
-  handleFormSubmit = (event) => {
+  handleFormSubmit = event => {
     event.preventDefault();
 
     const { username, password } = this.state;
 
-    this.service.login(username, password)
-    .then( response => {
+    this.service
+      .login(username, password)
+      .then(response => {
         this.setState({ username: "", password: "" });
-        this.props.getUser(response)
-    })
-    .catch( error => console.log(error) )
-  }
-    
-  handleChange = (event) => {  
-    const {name, value} = event.target;
-    this.setState({[name]: value});
-  }
-    
+        this.props.getUser(response);
+      })
+      .catch(error => console.log(error));
+  };
+
+  handleChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
-    return(
-      <div id="background-login" className="grandParentContainer">
-        <div className="parentContainer">
-          <div align="center">
-            <form className="loginForm" role="form" onSubmit={this.handleFormSubmit}>
-              <h2>Login</h2>
+    return (
+      <div className="format-login">
+        <div id="background-login">
+					<div className="align-form">
+            <form onSubmit={this.handleFormSubmit}>
+							<div className="align">
+								<h1>Login</h1>
+							</div>
               <div className="form-group">
-                <label for="email" className="col-sm-3 control-label font">Email:</label>
-                <div className="col-sm-9">
-                  <input type="email" id="email" placeholder="Email" class=" font" name="username" value={this.state.username} onChange={ e => this.handleChange(e)}/>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu email"
+                    className="font"
+                    name="username"
+                    value={this.state.username}
+                    onChange={e => this.handleChange(e)}
+                  />
                 </div>
               </div>
               <div className="form-group">
-                <label for="password" class="col-sm-3 control-label font">Password:</label>
-                <div className="col-sm-9">
-                  {/* <textarea name="password" value={this.state.password} onChange={ e => this.handleChange(e)} /> */}
-                  <input type="password" id="password" placeholder="Password" class=" font" name="password" value={this.state.password} onChange={ e => this.handleChange(e)}/>
+                <div>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite a senha"
+                    className="font"
+                    name="password"
+                    value={this.state.password}
+                    onChange={e => this.handleChange(e)}
+                  />
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-ajs">Login</button>
-              <span class="help-block"><Link to={'/signup'}>Não tem cadastro? Clique aqui </Link> </span>
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-ajs">
+                  Login
+                </button>
+              </div>
+              <div className="help-block">
+                <Link className="help-block" to={"/signup"}>Não tem cadastro? Clique aqui </Link>
+              </div>
+              <div className="help-block">
+                <Link className="help-block" to="/">Voltar</Link>
+              </div>
             </form>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

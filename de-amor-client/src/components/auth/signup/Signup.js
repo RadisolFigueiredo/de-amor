@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import AuthService from "./auth-service";
+import AuthService from "../auth-service";
 import { Link } from "react-router-dom";
-import "./login/login.css";
-
+import "./../login/login.css";
 
 class Signup extends Component {
   constructor(props) {
@@ -36,20 +35,18 @@ class Signup extends Component {
 
   render() {
     return (
-      <div id="background-login" className="grandParentContainer">
-        <div lassName="parentContainer">
-          <div align="center">
-            <form
-              className="loginForm"
-              role="form"
-              onSubmit={this.handleFormSubmit}
-            >
-              <h2>Cadastre-se</h2>
+      <div className="format-login">
+        <div id="background-login">
+          <div className="align-form">
+            <form onSubmit={this.handleFormSubmit}>
+              <div className="align">
+                <h1>Cadastre-se</h1>
+              </div>
+
               <div className="form-group">
-                <label className="col-sm-3 control-label font">Nome:</label>
-                <div className="col-sm-9">
+                <div>
                   <input
-                    placeholder="Nome"
+                    placeholder="Digite seu nome"
                     class=" font"
                     type="string"
                     name="name"
@@ -59,10 +56,9 @@ class Signup extends Component {
                 </div>
               </div>
               <div className="form-group">
-                <label className="col-sm-3 control-label font">Email:</label>
-                <div className="col-sm-9">
+                <div>
                   <input
-                    placeholder="Email"
+                    placeholder="Digite seu email"
                     class=" font"
                     type="string"
                     name="username"
@@ -72,10 +68,9 @@ class Signup extends Component {
                 </div>
               </div>
               <div className="form-group">
-                <label className="col-sm-3 control-label font">Senha:</label>
-                <div className="col-sm-9">
+                <div>
                   <input
-                    placeholder="Senha"
+                    placeholder="Digite sua senha"
                     class=" font"
                     type="string"
                     name="password"
@@ -84,12 +79,19 @@ class Signup extends Component {
                   />
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-ajs">
-                Cadastre-se
-              </button>
-              <span class="help-block">
-                <Link to={"/login"}>Já é cadastrado? Clique aqui </Link>{" "}
-              </span>
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-ajs">
+                  Cadastrar
+                </button>
+              </div>
+              <div className="help-block">
+                <Link className="help-block" to={"/login"}>Já é cadastrado? Clique aqui </Link>
+              </div>
+              <div className="help-block">
+                <Link className="help-block" to={"/"}>
+                  Voltar
+                </Link>
+              </div>
             </form>
           </div>
         </div>

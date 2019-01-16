@@ -1,0 +1,10 @@
+#edit-animal {
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#edit-animal h3 {
+    font-size: 2em;
+    margin: 2%;
+    color: #371107da;
+}

@@ -73,44 +73,39 @@ class Home extends Component {
       return (
         <div id="background-home">
           <div className="format">
-            <div className="logo">
-              <img src="images/logo2sol.png" alt="logo" width="20%" />
-            </div>
-            <nav className="navbar navbar-expand-md">
-              <div className="navbar-nav pos-nav">
-                <Link className="nav-item nav-link nav-dec" to="/">
-                  Home
-                </Link>
-
-                <Link className="nav-item nav-link nav-dec" to="/login">
-                  Adote
-                </Link>
-
-                <Link className="nav-item nav-link nav-dec" to="/login/">
-                  Doe
-                </Link>
-
-                <Link className="nav-item nav-link nav-dec" to="/login">
-                  Entre
+            <div className="background">
+              <div className="logo">
+                <Link to="/">
+                  <img src="images/logo2sol.png" alt="logo" />
                 </Link>
               </div>
-            </nav>
-            <div className="box-position">
-              <div className="position">
-                <h1>"Os animais esperam de nós o que nós esperamos dos Anjos"</h1>
-              </div>
-            </div>
-            <div className="box-footer">
-              <div className="footer-logout">
-                <ul>
-                  <li className="no_dec">© Copyright 2018</li>
-                  <li className="no_dec">Fale Conosco</li>
-                  <li className="no_dec">(11)2222-2222</li>
-                </ul>
+              <nav className="navbar-home navbar-expand-md">
+                <div className="navbar-home">
+                  <Link className="nav-item nav-link nav-dec" to="/AboutUs">
+                    Quem Somos
+                  </Link>
 
-                <i className="fab fa-facebook-f bolder no_dec" />
-                <i className="fab fa-instagram bolder no_dec" />
-                <h4 className="no_dec">Venha receber ou dar AMOR ♥ </h4>
+                  <Link className="nav-item nav-link nav-dec" to="/signup">
+                    Cadastre-se
+                  </Link>
+
+                  <Link className="nav-item nav-link nav-dec" to="/login">
+                    Entre
+                  </Link>
+                </div>
+              </nav> 
+              <div className="box-position">
+                <div className="position">
+                  <h3 className="font">"Os animais esperam de nós o que nós esperamos dos anjos"</h3>
+                </div>
+              </div>
+              <div className="box-footer">
+                <div className="footer-layout">
+                  <h4 className="">© Copyright 2018 </h4>
+                  <i className="fab fa-facebook-f bolder" />
+                  <i className="fab fa-instagram bolder" />
+                  <h4 className="">Venha receber ou dar AMOR ♥ </h4>
+                </div>
               </div>
             </div>
           </div>

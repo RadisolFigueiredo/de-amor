@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import './AnimalDetails.css';
+
 
 class AnimalDetails extends Component {
   constructor(props) {
@@ -57,7 +59,7 @@ class AnimalDetails extends Component {
 
   render() {
     return (
-      <div>
+      <div id="edit-animal">
         <h3>Editar Animal</h3>
         <form onSubmit={this.handleFormSubmit}>
           <label>Tipo do Animal:</label>

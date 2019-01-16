@@ -1,55 +1,56 @@
-
-.grandParentContaniner{
-	height:50%; 
-	margin: 0;
-}
-
-.parentContainer{
-	vertical-align:middle;
-	height:100%;
-}
-
-.loginForm {
-    border: 1px solid rgba(0, 0, 255, 0);
-    height: 50%;
-    vertical-align: middle;
-    max-width: 500px;
-    border-radius: 0.3em;
-}
-
-*[role="form"] h2 { 
-    font-family: 'Open Sans' , sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #371107e1;
-    margin-top: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding-bottom: 20px;
-}
-
-.font {
-    margin: 10px 0;
-    font-size: 1.9em;
-    text-align: center;
-    border-radius: 15px;
-    height: 30px;
-    color: #371107e1;
-}
-
-.btn-ajs {
-    margin: 15px;
-}
-
-.help-block {
-    font-size: 1.6em;
+.format-login {
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 #background-login  {
-    background: url("http://townsquare.media/site/722/files/2018/03/RS15492_479591780.jpg?w=980&q=75");
-    background-size: cover;
-    height:100vh;
-    z-index: 1000;
+	background: url("http://townsquare.media/site/722/files/2018/03/RS15492_479591780.jpg?w=980&q=75");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+}
+
+.align-form {
+	display: -webkit-flex;
+    align-items: center;
+	justify-content: center;
+	text-align: center;	
+	align-content: center;
+	height: 90vh;
+}
+
+.align h1 {
+	padding-bottom: 10%;
+	font-size: 5em;
+	font-weight: bolder;
+	color: #371107da;
+}
+
+.form-group {
+	padding-bottom: 5%;
+
+}
+
+.form-group input {
+	font-size: 1.5em;
+}
+
+.btn-ajs {
+	margin-bottom: 7%;
+	font-size: 1.7em;
+}
+
+
+.help-block {
+	font-size: 1.3em;
+	color: #371107da;
+	font-weight: bold;
+	margin-bottom: 3%;
+	background-color: rgba(255, 255, 255, 0.705);
+}
+
+.help-block:hover {
+	color: #371107da;
+	text-decoration-line: none;
 }
   

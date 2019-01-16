@@ -27,7 +27,7 @@ class AnimalList extends Component {
 
   render() {
     return (
-      <div>
+      <div id="">
         <div>
           {this.state.listOfAnimals.map(animal => {
             return (

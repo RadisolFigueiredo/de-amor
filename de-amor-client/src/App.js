@@ -6,12 +6,12 @@ import AnimalDetails from "./components/registeredDonation/AnimalDetails";
 import AnimalList from "./components/registeredDonation/AnimalList";
 import Navbar from "./components/navbar/Navbar";
 import "./components/navbar/Navbar.css";
-import Signup from "./components/auth/Signup";
+import Signup from "./components/auth/signup/Signup";
 import AuthService from "./components/auth/auth-service";
 import Login from "./components/auth/login/Login";
 import ProtectedRoute from "./components/auth/protected-route";
 import AdoptList from "./components/adoption/AdoptList";
-
+import AboutUs from "./components/aboutUs/AboutUs";
 
 class App extends Component {
   constructor(props) {
@@ -90,6 +90,11 @@ class App extends Component {
               exact
               path="/"
               component={Home}
+            />
+            <Route
+              exact
+              path="/aboutUs"
+              component={AboutUs}
             />
           </Switch>
         </div>

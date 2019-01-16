@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import ImageUpload from './ImageUpload'
+import './DoeAnimal.css';
+
 
 
 class AddAnimal extends Component {
@@ -34,8 +36,6 @@ class AddAnimal extends Component {
     return (
       <div id="id-list">
         <form onSubmit={this.handleFormSubmit}>
-          <label>Foto:</label>
-          <input type="file" name="imageUrl" onChange={ e => this.handleChange(e)}/>
           <label>Tipo do Animal:</label>
           <input type="text" name="type" value={this.state.type} onChange={e => this.handleChange(e)} />
           <label>Sexo:</label>
@@ -58,7 +58,8 @@ class AddAnimal extends Component {
           <input type="text" name="description" value={this.state.description} onChange={e => this.handleChange(e)} />
           <label>Dados para Contato::</label>
           <input type="text" name="contacts" value={this.state.contact} onChange={e => this.handleChange(e)} />
-
+          <label>Foto:</label>
+          <input type="file" name="imageUrl" onChange={ e => this.handleChange(e)}/>
           <input type="submit" value="Submit" />
         </form>
       </div>
