@@ -1,0 +1,53 @@
+#navdeslog {
+  /* font-family: "Roboto Condensed", sans-serif; */
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.navbar-home {
+  z-index: 1;
+  padding-right: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+.align-navdeslog {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* .nav-dec.active  */
+.nav-dec:hover {
+  background-color: #ff73006e;
+  height: 6vh;
+  color: white;
+  text-decoration-line: none;
+}
+
+.nav-dec {
+  position: relative;
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  display: flex;
+}
+
+/* @media screen and (max-width: 480px) {
+
+  .nav-dec {
+    font-size: 1em;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .nav-dec:hover,
+  .nav-dec.active {
+  height: 6vh;
+}
+
+} */

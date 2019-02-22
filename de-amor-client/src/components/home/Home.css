@@ -1,98 +1,86 @@
-.format {
+#home {
   width: 100%;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
 }
 
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; } 
-  }
-  
-.logo {
-  padding-top: 1%;
-  text-align: center;
-}
+} */
 
-.background {
-  background-image: url("https://www.petsandmoneysummit.com/sites/default/files/styles/cover_image_full/public/event_cover_images/pets_and_money_hero_image_-_minus_guinea.png?itok=JA-jklht");
+.carousel-item {
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 100%;
-  height:100vh;
+  height: 100vh;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
   
 }
 
-.navbar-home {
-  margin-top: 1%;
+.align-logo-home {
+  position: absolute;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-
-  
+  align-items: center;
+  height: 80vh;
+  margin-left: 5%;
 }
 
-.nav-dec:hover {
-  color: #371107da;
+.logo-home {
+  display: flex;
 }
 
-.nav-dec {
-  position: relative;
-  color: #371107da;
-  font-size: 2.2em;
-  /* word-spacing: 20px; */
+.logo-home img {
+  height: 15vh;
+}
+
+.logo-home h2 {
+  color: #fff;
   font-weight: bolder;
+  font-size: 6em;
+  margin-left: 5%;
 }
 
-.nav-dec:before {
-  content: "";
+.slogan {
   position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #371107da;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-dec:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.box-position {
-  margin-top: 2%;
+  width: 20%;
   display: flex;
+  align-items: flex-end;
+  height: 70vh;
+  margin-left: 5%;
+}
+
+.slogan h3 {
+  font-size: 3em;
+  color: #fff;
+}
+
+.box-cadastro {
+  position: absolute;
+  display: flex;
+  margin-left: 5%;
+  height: 90vh;;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 22%;
+  font-size: 2.8rem;
+}
+
+.box-no-dec {
+  color: #fff;
+  background-color: #0e1824;
+  color: #ff7400;
+  border-radius: 3%;
+  width: 60%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
-.position {
-  color: #2c4e93;
-  text-align: center;
-  font-family: 'Charm', cursive;
-  font-size: 1.5em;
-
-
-}
-
-.box-footer {
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  background-color: #37110778;
-  color: white;
-  height: 8%;
-  
-}
-
-.footer-layout {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1.5%;
-  font-size: 1.8em;
+.box-no-dec:hover {
+  text-decoration-line: none;
+  color: #ff7400;
 }

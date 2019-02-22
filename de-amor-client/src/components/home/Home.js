@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthService from "../auth/auth-service";
 import "./Home.css";
+import NavDeslog from "../navDeslog/NavDeslog";
+// import "../navDeslog/NavDeslog.css";
+// import AboutUs from "../aboutUs/AboutUs";
+// import Contacts from "../contacts/Contacts";
+// import FooterDeslog from "../footer/FooterDeslog";
+// import "../footer/FooterDeslog.css";
+// import AdoptList from "../adoption/AdoptList";
+// import ThumbnailGallery from "../thumbnail-gallery/index";
 
 class Home extends Component {
   constructor(props) {
@@ -22,95 +30,75 @@ class Home extends Component {
   };
 
   render() {
-    if (this.state.loggedInUser) {
+    if (!this.state.loggedInUser) {
       return (
-        <div  className="format">
-          <nav className="navbar navbar-expand-md navbar-light bg-dark">
-            <Link className="navbar-brand" to="#" />
-            Olá, {this.state.loggedInUser.name}
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarMainToggler"
-              aria-controls="navbarMainToggler"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+        <div id="home">
+          <NavDeslog />
+          <div>
+            <div className="align-logo-home">
+              <div className="logo-home">
+                <img src="images/logo.jpg" alt="logo" />
+                <h2>DÊ AMOR</h2>
+              </div>
+            </div>
+            <div className="slogan">
+              <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
+            </div>
+            <div className="box-cadastro">
+              <Link className="box-no-dec" to="/signup">
+                Cadastre-se
+              </Link>
+            </div>
+          </div>
+          <div id="background-home">
+            <div
+              id="carouselExampleFade"
+              className="carousel slide carousel-fade background"
+              data-ride="carousel"
             >
-              <span className="navbar-toggler-icon" />
-            </button>
-            <section
-              className="collapse navbar-collapse"
-              id="navbarMainToggler"
-            >
-              <div className="navbar-nav ml-auto">
-                <Link className="nav-item nav-link" to="/cadastro/">
-                  Doe
-                </Link>
-                <Link className="nav-item nav-link" to="/adote">
-                  Adote
-                </Link>
-                <Link
-                  className="nav-item nav-link"
-                  onClick={() => this.logoutUser()}
-                  to="/"
-                >
-                  Sair
-                </Link>
-              </div>
-            </section>
-          </nav>
-
-          <footer>
-            <container>
-              <i className="fab fa-facebook-f" />
-              <i className="fab fa-instagram" />
-            </container>
-          </footer>
-        </div>
-      );
-    } else {
-      return (
-        <div id="background-home">
-          <div className="format">
-            <div className="background">
-              <div className="logo">
-                <Link to="/">
-                  <img src="images/logo2sol.png" alt="logo" />
-                </Link>
-              </div>
-              <nav className="navbar-home navbar-expand-md">
-                <div className="navbar-home">
-                  <Link className="nav-item nav-link nav-dec" to="/AboutUs">
-                    Quem Somos
-                  </Link>
-
-                  <Link className="nav-item nav-link nav-dec" to="/signup">
-                    Cadastre-se
-                  </Link>
-
-                  <Link className="nav-item nav-link nav-dec" to="/login">
-                    Entre
-                  </Link>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    className="d-block w-100"
+                    src="/images/slide1.png"
+                    alt="Cachorro"
+                  />
                 </div>
-              </nav> 
-              <div className="box-position">
-                <div className="position">
-                  <h3 className="font">"Os animais esperam de nós o que nós esperamos dos anjos"</h3>
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100"
+                    src="/images/slide2.png"
+                    alt="Gato"
+                  />
                 </div>
-              </div>
-              <div className="box-footer">
-                <div className="footer-layout">
-                  <h4 className="">© Copyright 2018 </h4>
-                  <i className="fab fa-facebook-f bolder" />
-                  <i className="fab fa-instagram bolder" />
-                  <h4 className="">Venha receber ou dar AMOR ♥ </h4>
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100"
+                    src="/images/slide3.png"
+                    alt="Tartaruga"
+                  />
                 </div>
               </div>
             </div>
           </div>
+          {/* <div>
+            <div className="faixa" />
+            <div>
+              <AboutUs />
+            </div>
+            <div className="faixa" />
+            <div>
+              <ThumbnailGallery />
+            </div>
+            <div>
+              <Contacts />
+            </div>
+            <div className="faixa" />
+            <div>
+              <FooterDeslog />
+            </div>
+          </div> */}
         </div>
-
       );
     }
   }
