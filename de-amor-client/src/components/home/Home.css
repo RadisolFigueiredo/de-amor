@@ -4,10 +4,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
-/* @-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; } 
-} */
+}
 
 .carousel-item {
   z-index: -1;
@@ -17,15 +17,14 @@
   height: 100vh;
   -moz-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
-  
 }
 
-.align-logo-home {
+.logo-home {
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   height: 80vh;
-  margin-left: 5%;
+  margin: 10% 5%;
 }
 
 .logo-home {
@@ -33,14 +32,15 @@
 }
 
 .logo-home img {
-  height: 15vh;
+  height: 17vh;
+  margin: 3% 1%;
 }
 
 .logo-home h2 {
   color: #fff;
   font-weight: bolder;
-  font-size: 6em;
-  margin-left: 5%;
+  font-size: 5.5em;
+  width: 10%;
 }
 
 .slogan {
@@ -48,7 +48,7 @@
   width: 20%;
   display: flex;
   align-items: flex-end;
-  height: 70vh;
+  /* height: 70vh; */
   margin-left: 5%;
 }
 
@@ -57,15 +57,15 @@
   color: #fff;
 }
 
-.box-cadastro {
+/* .box-cadastro {
   position: absolute;
   display: flex;
   margin-left: 5%;
   height: 90vh;;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 22%;
-  font-size: 2.8rem;
+  width: 25%;
+  font-size: 38px;
 }
 
 .box-no-dec {
@@ -83,4 +83,123 @@
 .box-no-dec:hover {
   text-decoration-line: none;
   color: #ff7400;
+} */
+
+@media screen and (max-width: 369px) {
+
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .slogan h3 {
+    font-size: 24px;
+  }
+  
+  .box-cadastro {
+    font-size: 24px;
+    margin: 40px auto 0;
+    
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 480px) {
+
+  .carousel-item {
+    height: 59vh;
+  }
+
+  .slogan h3 {
+    font-size: 24px;
+  }
+  
+  .box-cadastro {
+    font-size: 26px;
+    margin: 40px auto 0;
+    
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 590px) {
+
+  .carousel-item {
+    height: 70vh;
+  }
+
+  .slogan h3 {
+    font-size: 26px;
+  }
+  
+  .box-cadastro {
+    font-size: 28px;
+    margin: 30px auto 0;
+  }
+
+}
+
+@media screen and (min-width: 591px) and (max-width: 670px) {
+
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .slogan h3 {
+    font-size: 28px;
+  }
+  
+  .box-cadastro {
+    font-size: 30px;
+    margin: 30px auto 0;
+  }
+
+}
+
+@media screen and (min-width: 671px) and (max-width: 800px) {
+
+  .carousel-item {
+    height: 90vh;
+  }
+
+  .slogan h3 {
+    font-size: 28px;
+    margin-top: 25px;
+  }
+  
+  .box-cadastro {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  .logo-home h2,
+  .logo-home img {
+    display: none;
+  }
+  
+  .slogan {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .slogan h3 {
+    text-align: center;
+    color: #0e1824;
+  }
+
+  .carousel-item img {
+    margin-top: 70px;
+  }
+  
+  .box-cadastro {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto 0;
+    background-color: #0e1824;
+  }
+  
+  .box-no-dec {
+    color: #ff7400;
+  }
 }

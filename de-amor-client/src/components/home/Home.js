@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AuthService from "../auth/auth-service";
 import "./Home.css";
 import NavDeslog from "../navDeslog/NavDeslog";
-// import "../navDeslog/NavDeslog.css";
 // import AboutUs from "../aboutUs/AboutUs";
 // import Contacts from "../contacts/Contacts";
 // import FooterDeslog from "../footer/FooterDeslog";
@@ -35,20 +34,11 @@ class Home extends Component {
         <div id="home">
           <NavDeslog />
           <div>
-            <div className="align-logo-home">
-              <div className="logo-home">
-                <img src="images/logo.jpg" alt="logo" />
-                <h2>DÊ AMOR</h2>
-              </div>
+            <div className="logo-home">
+              <img src="/images/logo.jpg" alt="logo"></img>
+              <h2>Dê Amor</h2>
             </div>
-            <div className="slogan">
-              <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
-            </div>
-            <div className="box-cadastro">
-              <Link className="box-no-dec" to="/signup">
-                Cadastre-se
-              </Link>
-            </div>
+
           </div>
           <div id="background-home">
             <div
@@ -59,21 +49,21 @@ class Home extends Component {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    className="d-block w-100"
+                    className=" w-100 background"
                     src="/images/slide1.png"
                     alt="Cachorro"
                   />
                 </div>
                 <div className="carousel-item">
                   <img
-                    className="d-block w-100"
+                    className="w-100 background"
                     src="/images/slide2.png"
                     alt="Gato"
                   />
                 </div>
                 <div className="carousel-item">
                   <img
-                    className="d-block w-100"
+                    className="w-100 background"
                     src="/images/slide3.png"
                     alt="Tartaruga"
                   />
@@ -81,6 +71,16 @@ class Home extends Component {
               </div>
             </div>
           </div>
+
+          <div className="slogan">
+              <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
+            </div>
+            <div className="box-cadastro">
+              <Link className="box-no-dec" to="/signup">
+                Cadastre-se
+              </Link>
+            </div>
+            
           {/* <div>
             <div className="faixa" />
             <div>

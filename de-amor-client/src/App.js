@@ -12,6 +12,7 @@ import Login from "./components/auth/login/Login";
 import ProtectedRoute from "./components/auth/protected-route";
 import AdoptList from "./components/adoption/AdoptList";
 import AboutUs from "./components/aboutUs/AboutUs";
+import Contacts from "./components/contacts/Contacts";
 
 class App extends Component {
   constructor(props) {
@@ -95,6 +96,11 @@ class App extends Component {
               exact
               path="/aboutUs"
               component={AboutUs}
+            />
+            <Route
+              exact
+              path="/contacts"
+              component={Contacts}
             />
           </Switch>
         </div>

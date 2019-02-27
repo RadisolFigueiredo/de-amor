@@ -7,7 +7,7 @@ class Logo extends Component {
 		return (
 			<div id="Logo">
 				<div>
-					<img src="../../../public/images/logo.jpg" alt="logo" ></img>
+					<img src="/images/logo.jpg" alt="logo" ></img>
 					<h2>
 						DÊ AMOR
 					</h2>
