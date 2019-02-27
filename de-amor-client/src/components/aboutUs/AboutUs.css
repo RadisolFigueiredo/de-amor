@@ -1,133 +1,158 @@
-.box {
+#about {
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 100%;
 	height: 100vh;
-
 }
-/* 
-.image {
-	-webkit-filter: grayscale(100%);
-}
-
-.image:hover {
-	-webkit-filter: grayscale(0%);
-	transition: 1s;
-} */
 
 #background-AboutUs {
-	background-image: url("https://millbafs.com/wp-content/uploads/2014/01/group-of-pets-together-15229056.jpg");
-	background-size: 100%;
+	background-image: url("/images/screen(4).jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: 100%;
 	height: 100vh;
-	/* opacity: 0.7; */
-	/* z-index: -100; */
-	/* box-shadow: 100% 100% rgba(233, 232, 232, 0.459) inset; */
+	/* -moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%; */
+}
+
+@media screen and (max-width: 369px) {
+
+	.text-about {
+		width: 57%;
+		height: 68%;
+	}
+
+	.text-about p {
+		font-size: 16px;
+	}
+	
+	.box-about h4 {
+		width: 55%;
+		font-size: 24px;
+	}
 
 }
 
-/* #anim {
-	text-align: center;
-} */
+@media screen and (min-width: 370px) and (max-width: 480px) {
 
-/* .box-container {
-	width: 100%;
-	height: 35vh;
-} */
-
-/* .box-container h1 {
-	font-size: 10em;
-	color: white;
-	font-weight: bolder;
-	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color:rgba(0, 0, 0, 0.418);
-
-} */
-
-/* @keyframes anim {
-	from {
-		margin-left: 120%;
+	.text-about {
+		width: 53%;
+		height: 74%;
 	}
-	to {
-		margin-left: -100%;
+
+	.text-about p {
+		font-size: 18px;
+	}
+	
+	.box-about h4 {
+		width: 50%;
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 590px) {
+
+	#background-AboutUs {
+		background-position-y: 50%;
+
+	}
+
+	.text-about {
+		width: 50%;
+		height: 72%;
+	}
+
+	.text-about p {
+		font-size: 20px;
+	}
+	
+	.box-about h4 {
+		width: 40%;
+		font-size: 28px;
+	}
+}
+
+@media screen and (min-width: 591px) and (max-width: 670px) {
+
+	#background-AboutUs {
+		background-position-y: 35%;
+
+	}
+
+	.text-about {
+		width: 48.5%;
+		height: 70%;
+	}
+
+	.text-about p {
+		font-size: 21px;
+	}
+	
+	.box-about h4 {
+		width: 35%;
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 671px) and (max-width: 800px) {
+
+	#background-AboutUs {
+		background-position-y: 35%;
+	}
+
+	.text-about {
+		width: 47%;
+		height: 67%;
+	}
+
+	.text-about p {
+		font-size: 22px;
+	}
+	
+	.box-about h4 {
+		width: 35%;
+		font-size: 30px;
+	}
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#background-AboutUs {
+		padding-top: 85px;
+	}
+
+	.title-about h1 {
+		color: white;
+		font-weight: bold;
+		margin-left: 5%;
+	}
+	
+	.text-about {
+		text-align: justify;
+		margin: 2% 5%;
+
+	}
+
+	.text-about p {
+		color: white;
+	}
+
+	.box-about {
+		display: flex;
+		align-items: flex-end;
 		width: 100%;
 	}
-}
+	
+	.box-about h4 {
+		margin-left: 5%;
 
-#anim {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	animation: anim 10s linear 5s infinite;
-} */
-
-.box-cont {
-	display: flex;
-	justify-content: space-between;
-	align-self: center;
-
-	/* width: 100%; */
-	/* height: 48vh; */
-	/* border: 1px solid red; */
-	/* z-index: -100; */
-}
-
-.box-cont h2 {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 1.5em;
-}
-
-.box-cont-e {
-	width: 35%;
-	height: 50vh;
-	/* border-radius: 5px; */
-	color: #371107;
-	font-size: 1.5em;
-	text-align: justify;
-	/* border: 2px solid gray; */
-	padding: 2%;
-
-}
-
-.box-cont-e p {
-	overflow: auto;
-	height: 33vh;
-}
-
-.box-cont-d {
-	width: 35%;
-	height: 50vh;
-	/* border-radius: 5px; */
-	color: #371107;
-	font-size: 1.5em;
-	text-align: justify;
-	/* border: 2px solid gray; */
-	padding: 2%;
-
-}
-
-.box-cont-d p {
-	overflow: auto;
-	height: 33vh;
+	}
+	.link-about {
+    color: #ff7400;
+	}
+	
 
 }
 
 
-.alinhar {
-	display: flex;
-	justify-content: flex-end;
-	align-content: flex-end;
-}
-
-.alinhamento {
-	font-size: 1.5em;
-	color: #371107da;
-	font-weight: bold;
-	margin: 2%;
-}
-
-.alinhamento:hover {
-	text-decoration-line: none;
-	color: #371107da;
-}
