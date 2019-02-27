@@ -70,28 +70,23 @@ label {
   .nav-home {
     background: #0e1824;
     text-align: right;
-    height: 70px;
     line-height: 70px;
     padding-right: 2%;
-    width: 100%;
-
   }
 
   .menu-deslog {
-    background: #0e1824;
     text-align: center;
     display: none;
     width: 100%;
   }
   
   .nav-item {
-    width: 100%;
+    width: 102%;
     border-top: 1px solid #fff;
     position: relative;
     display: block;
     background: #0e1824;
     line-height: 50px;
-    margin: 0 10px;
     clear: right;
     z-index: 1;
 
@@ -116,6 +111,11 @@ label {
     text-align: left;
   }
   
+  .nav-item:hover {
+    color: white;
+    text-decoration-line: none;
+    background-color: #ff7300;
+  }
 }
 
 @media screen and (min-width: 801px) {
@@ -127,6 +127,7 @@ label {
   .nav-item {
     font-size: 30px;
   }
+
 }
 
 
