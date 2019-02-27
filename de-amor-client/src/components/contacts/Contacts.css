@@ -1,0 +1,157 @@
+#contact {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	height: 100vh;
+}
+
+#background-contact {
+	background-image: url("/images/download.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 100%;
+	height: 100vh;
+}
+
+@media screen and (max-width: 369px) {
+
+	#background-contact {
+		padding-top: 50%;
+		background-position-x: 35%;
+	}
+
+	.title-contact {
+		margin: 0 0 20% 5%;
+	}
+
+	.email-contact {
+		margin: 20% 0 0 5%;
+	}
+
+	.email-contact h5{
+		font-size: 24px;
+	}
+
+	.text-contact {
+		margin: 25% 0 0 5%;
+	}
+
+	.text-contact p {
+		width: 80%;
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 370px) and (max-width: 480px) {
+
+	#background-contact {
+		padding-top: 30%;
+		background-position-x: 26%;
+	}
+
+	.title-contact {
+		margin: 5%;
+	}
+
+	.title-contact h1 {
+		font-size: 38px;
+	}
+
+	.email-contact {
+		margin: 20% 0 0 5%;
+	}
+
+	.email-contact h5{
+		font-size: 25px;
+	}
+
+	.text-contact {
+		margin: 15% 0 0 5%;
+	}
+
+	.text-contact p {
+		width: 65%;
+		font-size: 23px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 670px) {
+
+	#background-contact {
+		padding-top: 26%;
+		background-position-x: 12%;
+	}
+
+	.title-contact {
+		margin: 0 0 13% 5%;
+	}
+
+	.title-contact h1 {
+		font-size: 40px;
+	}
+
+	.email-contact {
+		margin: 0 0 12% 5%;
+	}
+
+	.email-contact h5{
+		font-size: 28px;
+	}
+
+	.text-contact {
+		margin-left: 5%;
+	}
+
+	.text-contact p {
+		width: 60%;
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 671px) and (max-width: 800px) {
+
+	#background-contact {
+		padding-top: 18%;
+	}
+
+	.title-contact {
+		margin: 0 0 10% 5%;
+	}
+
+	.title-contact h1 {
+		font-size: 45px;
+	}
+
+	.email-contact {
+		margin: 0 0 12% 5%;
+	}
+
+	.email-contact h5{
+		font-size: 30px;
+	}
+
+	.text-contact {
+		margin-left: 5%;
+	}
+
+	.text-contact p {
+		width: 50%;
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.title-contact h1 {
+		color: white;
+		font-weight: bold;
+	}
+
+	.email-contact h5{
+		color: #ff7400;
+	}
+
+	.text-contact p {
+		color: white;
+	}
+}
+

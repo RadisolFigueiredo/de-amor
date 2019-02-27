@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./AboutUs.css";
 import { Link } from "react-router-dom";
 import NavDeslog from "../navDeslog/NavDeslog";
+import "./AboutUs.css";
 
 class AboutUs extends Component {
   render() {
