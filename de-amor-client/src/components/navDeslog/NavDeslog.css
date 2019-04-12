@@ -10,6 +10,7 @@
 
 .nav-home {
   z-index: 1;
+  margin-top: 5px;
   width: 100%;
   position: fixed;
 }
@@ -20,13 +21,13 @@
   font-weight: bolder;
   position: relative;
   margin-right: 30px;
-  width: 100%;
 }
 
 .nav-item:hover {
   color: white;
   text-decoration-line: none;
   background-color: #ff73006e;
+
 }
 
 label {

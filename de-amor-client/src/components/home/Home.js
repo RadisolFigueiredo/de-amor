@@ -73,13 +73,13 @@ class Home extends Component {
           </div>
 
           <div className="slogan">
-              <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
-            </div>
+            <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
             <div className="box-cadastro">
               <Link className="box-no-dec" to="/signup">
                 Cadastre-se
               </Link>
             </div>
+          </div>
             
           {/* <div>
             <div className="faixa" />

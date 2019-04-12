@@ -23,82 +23,90 @@
   position: absolute;
   display: flex;
   align-items: flex-start;
-  height: 80vh;
   margin: 10% 5%;
 }
 
-.logo-home {
-  display: flex;
-}
-
 .logo-home img {
-  height: 17vh;
+  height: 14vh;
   margin: 3% 1%;
 }
 
 .logo-home h2 {
   color: #fff;
   font-weight: bolder;
-  font-size: 5.5em;
+  font-size: 4.5em;
   width: 10%;
 }
 
 .slogan {
+  z-index: 1;
   position: absolute;
-  width: 20%;
+  width: 25%;
   display: flex;
-  align-items: flex-end;
-  /* height: 70vh; */
+  align-items: flex-start;
+  height: 39vh;
   margin-left: 5%;
+  margin-top: -45%;
 }
 
 .slogan h3 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #fff;
 }
 
-/* .box-cadastro {
+.box-cadastro {
   position: absolute;
   display: flex;
-  margin-left: 5%;
-  height: 90vh;;
+  height: 38vh;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 25%;
-  font-size: 38px;
+  width: 100%;
+  font-size: 2em;
 }
 
 .box-no-dec {
+  position: absolute;
+  display: flex;
   color: #fff;
   background-color: #0e1824;
   color: #ff7400;
   border-radius: 3%;
-  width: 60%;
+  width: 100%;
   height: 6vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .box-no-dec:hover {
   text-decoration-line: none;
   color: #ff7400;
-} */
+}
 
 @media screen and (max-width: 369px) {
 
   .carousel-item {
-    height: 50vh;
-  }
-
-  .slogan h3 {
-    font-size: 24px;
+    height: 40vh;
+    
   }
   
-  .box-cadastro {
+  .slogan h3 {
     font-size: 24px;
-    margin: 40px auto 0;
+    border: 1px solid red;
     
+  }
+  
+  .box-no {
+    border: 1px solid red;
+    font-size: 22px;
+    /* margin: 40px auto 0; */
+    height: 5vh;
+  }
+
+  .box-no-dec {
+    border: 1px solid red;
+    margin-top: 60px;
   }
 }
 
