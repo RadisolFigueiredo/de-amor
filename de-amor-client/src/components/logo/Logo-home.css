@@ -1,0 +1,25 @@
+#logo-home {
+	margin-left: 30px;
+	z-index: 3;
+	position: absolute;
+	height: 60%;
+	border: 2px solid red;
+	display: flex;
+	align-items: center;
+}
+
+.box-logo {
+	display: flex;
+	align-items: center;
+}
+
+.img-logo {
+	width: 32%;
+}
+
+h2 {
+	font-size: 3.5em;
+	font-weight: bolder;
+	color: white;
+	width: 60%;
+}

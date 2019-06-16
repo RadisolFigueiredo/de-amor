@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import AuthService from "../auth/auth-service";
 import "./Home.css";
 import NavDeslog from "../navDeslog/NavDeslog";
+import LogoHome from "../logo/Logo-home";
+
 // import AboutUs from "../aboutUs/AboutUs";
 // import Contacts from "../contacts/Contacts";
 // import FooterDeslog from "../footer/FooterDeslog";
@@ -33,13 +35,14 @@ class Home extends Component {
       return (
         <div id="home">
           <NavDeslog />
-          <div>
+          {/* <div>
             <div className="logo-home">
               <img src="/images/logo.jpg" alt="logo"></img>
               <h2>Dê Amor</h2>
             </div>
 
-          </div>
+          </div> */}
+          <LogoHome />
           <div id="background-home">
             <div
               id="carouselExampleFade"
@@ -72,12 +75,14 @@ class Home extends Component {
             </div>
           </div>
 
-          <div className="slogan">
+          <div className="box">
+            <div className="slogan">
             <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
             <div className="box-cadastro">
               <Link className="box-no-dec" to="/signup">
                 Cadastre-se
               </Link>
+            </div>
             </div>
           </div>
             
