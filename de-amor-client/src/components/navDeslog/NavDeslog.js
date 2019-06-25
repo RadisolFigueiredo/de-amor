@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import "./NavDeslog.css";
+import LogoHome from "../logo/Logo-home";
 
 class NavDeslog extends Component {
   render() {
     return (
       <div id="navdeslog">
         <div className="nav-home">
-					<img src="/images/logo.jpg" alt="logo" className="logo-deslog"></img>
-					<h4>Dê Amor</h4>
+					<LogoHome />
           <label for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle" />
           <div className="menu-deslog">

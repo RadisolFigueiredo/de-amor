@@ -5,11 +5,13 @@
 }
 
 .menu-deslog {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -12%;
 }
 
 .nav-home {
-  z-index: 1;
+  z-index: 2;
   margin-top: 5px;
   width: 100%;
   position: fixed;
@@ -18,8 +20,8 @@
 .nav-item {
   color: white;
   font-size: 2.5em;
-  font-weight: bolder;
-  position: relative;
+  font-weight: bold;
+  /* position: relative; */
   margin-right: 30px;
 }
 
@@ -27,7 +29,6 @@
   color: white;
   text-decoration-line: none;
   background-color: #ff73006e;
-
 }
 
 label {
@@ -43,24 +44,24 @@ label {
 
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 
   .nav-item {
     font-size: 17px;
   }
-}
+} */
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+/* @media screen and (min-width: 481px) and (max-width: 800px) {
 
   .nav-item {
     font-size: 20px;
     height: 55px;
 
   }
-}
+} */
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
   label {
     color: #ff7400;
@@ -117,9 +118,9 @@ label {
     text-decoration-line: none;
     background-color: #ff7300;
   }
-}
+} */
 
-@media screen and (min-width: 801px) {
+/* @media screen and (min-width: 801px) {
 
   .logo-deslog, h4 {
     display: none;
@@ -129,7 +130,7 @@ label {
     font-size: 30px;
   }
 
-}
+} */
 
 
 

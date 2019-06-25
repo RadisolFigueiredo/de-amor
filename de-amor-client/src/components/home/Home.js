@@ -34,15 +34,12 @@ class Home extends Component {
     if (!this.state.loggedInUser) {
       return (
         <div id="home">
-          <NavDeslog />
-          {/* <div>
-            <div className="logo-home">
-              <img src="/images/logo.jpg" alt="logo"></img>
-              <h2>Dê Amor</h2>
-            </div>
-
-          </div> */}
-          <LogoHome />
+          <div>
+            <NavDeslog />
+          </div>
+          <div>
+            <LogoHome />
+          </div>
           <div id="background-home">
             <div
               id="carouselExampleFade"
@@ -74,15 +71,14 @@ class Home extends Component {
               </div>
             </div>
           </div>
-
           <div className="box">
             <div className="slogan">
-            <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
-            <div className="box-cadastro">
-              <Link className="box-no-dec" to="/signup">
-                Cadastre-se
-              </Link>
-            </div>
+              <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
+              <div className="box-cadastro">
+                <Link className="box-no-dec" to="/signup">
+                  Cadastre-se
+                </Link>
+              </div>
             </div>
           </div>
             

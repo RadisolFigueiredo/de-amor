@@ -3,7 +3,6 @@
 	z-index: 3;
 	position: absolute;
 	height: 60%;
-	border: 2px solid red;
 	display: flex;
 	align-items: center;
 }
@@ -22,4 +21,38 @@ h2 {
 	font-weight: bolder;
 	color: white;
 	width: 60%;
+}
+
+/* @media screen and (min-width: 768px) {
+
+	#logo-home {
+		display: none;
+	}
+} */
+
+@media screen and (min-width: 832px) and (max-width: 1024px) {
+
+	#logo-home {
+		height: 40%;
+	}
+
+	.img-logo {
+		width: 28%;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+  
+	#logo-home {
+		height: 50%;
+	}
+
+	.img-logo {
+		width: 28%;
+	}
+
 }
