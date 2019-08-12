@@ -1,45 +1,64 @@
-#home {
+* {
+  margin: 0;
+  padding:0;
+}
+
+#fundo-externo {
+  overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+#home {
+  position: fixed;
+  width: 100%;
+  height: 100%;
   font-family: 'Roboto Mono', monospace;
 }
 
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; } 
+#home background {
+  width: 100%;
+  position: absolute;
 }
 
 .carousel-item {
   z-index: -1;
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
-  /* background-position-y: 100%; */
-  height: 100vh;
-  /* -moz-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%; */
 }
 
 .box {
-  margin-top: -47%;
-  margin-left: 1.7%;
+  border: 1px solid blue;
+  display: flex;
+  align-items: flex-start;
+  padding: 80px 50px;
+  z-index: 300;
+  position: absolute;
 }
 
+.box h3 {
+  border: 3px solid red;
+  display: flex;
+  align-items: center;
+  padding: 80px 50px;
+  /* width: 100%;
+  height: 100%; */
+  }
+
 .slogan {
-  z-index: 1;
-  position: absolute;
+  z-index: 100;
+  /* position: absolute; */
   width: 25%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 90vh;
 }
 
 .slogan h3 {
-  font-size: 2.5em;
+  font-size: 22px;
   color: #fff;
 }
 
-.box-cadastro {
+/* .box-cadastro {
   position: absolute;
   display: flex;
   height: 38vh;
@@ -48,9 +67,9 @@
   width: 100%;
   font-size: 2em;
 
-}
+} */
 
-.box-no-dec {
+/* .box-no-dec {
   position: absolute;
   display: flex;
   color: #fff;
@@ -62,12 +81,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.box-no-dec:hover {
+/* .box-no-dec:hover {
   text-decoration-line: none;
   color: #ff7400;
-}
+} */
 
 /* @media screen and (max-width: 369px) {
 
@@ -128,7 +147,7 @@
 
 } */
 
-@media screen and (min-width: 768px) and (max-width: 811px) {
+/* @media screen and (min-width: 768px) and (max-width: 811px) {
 
   .slogan {
     margin-top: -36%;
@@ -144,9 +163,9 @@
     width: 86%;
   }
 
-}
+} */
 
-@media screen and (min-width: 812px) and (max-width: 1024px) {
+/* @media screen and (min-width: 812px) and (max-width: 1024px) {
   
   .slogan {
     margin-top: -36%;
@@ -162,9 +181,9 @@
     width: 86%;
   }
 
-}
+} */
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
   
   .slogan {
     margin-top: -32%;
@@ -176,4 +195,4 @@
     font-size: 2.1em;
   }
 
-}
+} */

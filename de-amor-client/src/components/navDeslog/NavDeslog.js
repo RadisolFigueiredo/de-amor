@@ -9,7 +9,7 @@ class NavDeslog extends Component {
     return (
       <div id="navdeslog">
         <div className="nav-home">
-					<LogoHome />
+					{/* <LogoHome /> */}
           <label for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle" />
           <div className="menu-deslog">
@@ -26,6 +26,7 @@ class NavDeslog extends Component {
               Contato
             </Link>
           </div>
+          <LogoHome />
         </div>
       </div>
     );

@@ -1,23 +1,28 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
 #logo-home {
-	margin-left: 30px;
+	/* width: 100%;
+  height: 100%; */
 	z-index: 3;
-	position: absolute;
-	height: 60%;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	padding: 80px 50px;
+	border: 1px solid red;
 }
 
 .box-logo {
 	display: flex;
-	align-items: center;
 }
 
 .img-logo {
-	width: 32%;
+	width: 34%;
 }
 
 h2 {
-	font-size: 3.5em;
+	font-size: 50px;
 	font-weight: bolder;
 	color: white;
 	width: 60%;
@@ -30,7 +35,7 @@ h2 {
 	}
 } */
 
-@media screen and (min-width: 832px) and (max-width: 1024px) {
+/* @media screen and (min-width: 832px) and (max-width: 1024px) {
 
 	#logo-home {
 		height: 40%;
@@ -43,9 +48,9 @@ h2 {
 	h2 {
 		font-size: 3em;
 	}
-}
+} */
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
   
 	#logo-home {
 		height: 50%;
@@ -55,4 +60,4 @@ h2 {
 		width: 28%;
 	}
 
-}
+} */

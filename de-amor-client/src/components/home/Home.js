@@ -37,40 +37,7 @@ class Home extends Component {
           <div>
             <NavDeslog />
           </div>
-          <div>
-            <LogoHome />
-          </div>
-          <div id="background-home">
-            <div
-              id="carouselExampleFade"
-              className="carousel slide carousel-fade background"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    className=" w-100 background"
-                    src="/images/slide1.png"
-                    alt="Cachorro"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="w-100 background"
-                    src="/images/slide2.png"
-                    alt="Gato"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="w-100 background"
-                    src="/images/slide3.png"
-                    alt="Tartaruga"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div className="box">
             <div className="slogan">
               <h3>Um espaço para quem deseja doar ou adotar um bichinho</h3>
@@ -78,6 +45,43 @@ class Home extends Component {
                 <Link className="box-no-dec" to="/signup">
                   Cadastre-se
                 </Link>
+              </div>
+            </div>
+          </div>
+          
+          {/* <div>
+            <LogoHome />
+          </div> */}
+          <div id="fundo-externo">
+            <div id="background-home">
+              <div
+                id="carouselExampleFade"
+                className="carousel slide carousel-fade"
+                data-ride="carousel"
+              >
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img
+                      className=" w-100 background"
+                      src="/images/slide1.png"
+                      alt="Cachorro"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      className="w-100 background"
+                      src="/images/slide2.png"
+                      alt="Gato"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      className="w-100 background"
+                      src="/images/slide3.png"
+                      alt="Tartaruga"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
